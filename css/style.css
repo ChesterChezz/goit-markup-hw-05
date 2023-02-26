@@ -105,7 +105,7 @@ img {
     color: var(--navy-blue-color);
     display: block;
     padding: 24px 0;
-    transition: var(--animation-default);
+    transition: color var(--animation-default);
 }
 .header-pages:hover, .header-pages:focus {
     color: var(--ocean-color);
@@ -137,7 +137,7 @@ img {
     padding: 24px 0;
     text-decoration: none;
     color: var(--slate-color);
-    transition:  var(--animation-default);
+    transition:  color var(--animation-default);
 }
 
 .address_style li a:hover, .address_style li a:focus {
@@ -185,10 +185,11 @@ img {
     margin: 0 auto;
     display: block;
     padding: 16px 32px;
-    transition: var(--animation-default);
+    transition: background-color var(--animation-default),
+    color var(--animation-default);
 }
 .order_btn:hover, .order_btn:focus{
-    background: var(--ocean-color);
+    background-color: var(--ocean-color);
     color: var(--cornflower-color);
 }
 
@@ -300,7 +301,7 @@ img {
     height: 40px;
     background-color: var(--iris-color);
     border-radius: 50%;
-    transition: var(--animation-default);
+    transition: background-color var(--animation-default);
 }
 .employeers a:hover,
 .employeers a:focus{
@@ -336,7 +337,7 @@ img {
 }
 .customers-list svg{
   fill: var(--light-slate);
-  transition: var(--animation-default);
+  transition: fill var(--animation-default);
   
 }   
 
@@ -353,7 +354,7 @@ img {
 
 }
 .customers-list a{
-       transition: var(--animation-default);
+    transition: border var(--animation-default);
     border-radius: 4px;
     border: 1px solid var(--light-slate);
     display: flex;
@@ -417,7 +418,7 @@ img {
     padding: 8px 8px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    transition: var(--animation-default);
+    transition: background-color var(--animation-default);
 }
 .footer-social a:hover, .footer-social a:focus{
     background-color: var(--iris-color);
@@ -448,7 +449,10 @@ img {
     font-weight: 500;
     font-size: 16px;
     padding: 12px 24px;
-    transition: var(--animation-default);
+    transition: color var(--animation-default), 
+    background-color var(--animation-default),
+    border-color var(--animation-default), 
+    box-shadow var(--animation-default);
 }
 .portfoliobuttonslist button:hover , 
 .portfoliobuttonslist button:active, 
@@ -460,7 +464,6 @@ img {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     0px 2px 1px rgba(0, 0, 0, 0.08), 
     0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
 
 }
 
@@ -529,7 +532,8 @@ img {
         height: 100%;
         background: rgba(46, 47, 66, 0.5);
         opacity: 1;
-        transition: var(--animation-default);
+        transition: opacity var(--animation-default),
+        visibility var(--animation-default);
 }
 .main-modal{
         position: absolute;
@@ -556,7 +560,7 @@ img {
     position: absolute;
     right: 24px;
     top:24px;
-    transition: var(--animation-default);
+    transition:  background-color var(--animation-default);
 }
 .modal-close-btn:hover, .modal-close-btn:focus{
     background: var(--cornflower-color);
@@ -569,5 +573,5 @@ img {
 }
 .modal-div.is-hidden .main-modal{
    transform: translate(-50%, -50%) scale(1.2);
-   transition: transform var(--animation-default);
+    transition: transform var(--animation-default);
 }
