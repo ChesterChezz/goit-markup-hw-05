@@ -421,7 +421,7 @@ img {
     transition: background-color var(--animation-default);
 }
 .footer-social a:hover, .footer-social a:focus{
-    background-color: var(--iris-color);
+    background-color: #31D0AA;
 }
 /*=============== PORTFOLIO ==============*/
 
@@ -487,7 +487,8 @@ img {
 
 .portfoliomenu_style a {
     text-decoration: none;
-    
+    display: block;
+    transition: box-shadow var(--animation-default);
 }
 .portfolio-about{
     position: relative;
@@ -506,8 +507,8 @@ img {
     color: var(--cloud-color);
     transition: transform var(--animation-default);
 }
-.portfoliomenu_style a:hover .portfolio-underlist, 
-.portfoliomenu_style a:focus .portfolio-underlist
+.portfoliomenu_style a:hover, 
+.portfoliomenu_style a:focus
 {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
     0px 1px 1px rgba(46, 47, 66, 0.16), 
@@ -520,7 +521,7 @@ img {
     border-top: none;
     padding-top: 32px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-    transition: box-shadow var(--animation-default);
+    
 }
 /*================MODAL ===============*/
 
@@ -552,7 +553,9 @@ img {
 
 }
 .modal-close-btn{
-    background: var(--cloud-color);
+    background: var(--cornflower-color);
+    width: 24px;
+    height: 24px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     padding: 8px;
@@ -561,9 +564,19 @@ img {
     right: 24px;
     top:24px;
     transition:  background-color var(--animation-default);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.modal-close-btn svg{
+    fill: black;
 }
 .modal-close-btn:hover, .modal-close-btn:focus{
-    background: var(--cornflower-color);
+    background: var(--ocean-color);
+}
+.modal-close-btn:hover .close-btn-svg{
+    fill: var(--clean-white);
 }
 .is-hidden{
     visibility: hidden;
